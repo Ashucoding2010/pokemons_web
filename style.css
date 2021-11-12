@@ -1,0 +1,17 @@
+img{
+
+margin: 30px;
+
+}
+.names{
+
+font-size: 25px;
+margin-left: 80px;
+margin-right:80px; 
+
+}
+img:hover{
+
+transform:scale(1.5);
+
+}

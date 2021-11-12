@@ -1,0 +1,590 @@
+<html>
+
+<head>
+
+  <title>Pokemon Sword & Shield 2 - Ashwin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body src="bachground.jpg"></body>
+<center>
+  <img width="600"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png">
+  <h1>Pokemon Sword & Shield 2 - by Ashwin Chezhian Student Clarence public School</h1>
+  <br><br><br>
+  <img width="200" src="001.png" data-target="#m1" data-toggle="modal">
+  <img width="200" src="002.png" data-target="#m2" data-toggle="modal">
+  <img width="200" src="003.png" data-target="#m3" data-toggle="modal">
+  <img width="200" src="004.png" data-target="#m4" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m1" data-toggle="modal">Bulbasaur</span>
+  <span class="names" data-target="#m2" data-toggle="modal">Ivysaur</span>
+  <span class="names" data-target="#m3" data-toggle="modal">Venusaur</span>
+  <span class="names" data-target="#m4" data-toggle="modal">Charmander</span>
+  <br><br><br>
+  <img width="200" src="005.png" data-target="#m5" data-toggle="modal">
+  <img width="200" src="006.png" data-target="#m6" data-toggle="modal">
+  <img width="200" src="007.png" data-target="#m7" data-toggle="modal">
+  <img width="200" src="008.png" data-target="#m8" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m5" data-toggle="modal">Charmeleon</span>
+  <span class="names" data-target="#m6" data-toggle="modal">Charizard</span>
+  <span class="names" data-target="#m7" data-toggle="modal">Squirtle</span>
+  <span class="names" data-target="#m8" data-toggle="modal">Wartortle</span>
+  <br><br><br>
+  <img width="200" src="009.png" data-target="#m9" data-toggle="modal">
+  <img width="200" src="010.png" data-target="#m10" data-toggle="modal">
+  <img width="200" src="011.png" data-target="#m11" data-toggle="modal">
+  <img width="200" src="012.png" data-target="#m12" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m9" data-toggle="modal">Blastoise</span>
+  <span class="names" data-target="#m10" data-toggle="modal">Caterpie</span>
+  <span class="names" data-target="#m11" data-toggle="modal">Metapod</span>
+  <span class="names" data-target="#m12" data-toggle="modal">Butterfree</span>
+  <br><br><br>
+  <img width="200" src="013.png" data-target="#m13" data-toggle="modal">
+  <img width="200" src="014.png" data-target="#m14" data-toggle="modal">
+  <img width="200" src="015.png" data-target="#m15" data-toggle="modal">
+  <img width="200" src="016.png" data-target="#m16" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m13" data-toggle="modal">Weedle</span>
+  <span class="names" data-target="#m14" data-toggle="modal">Kakuna</span>
+  <span class="names" data-target="#m15" data-toggle="modal">Beedrill</span>
+  <span class="names" data-target="#m16" data-toggle="modal">Pidgey</span>
+  <br><br><br>
+  <img width="200" src="017.png" data-target="#m17" data-toggle="modal">
+  <img width="200" src="018.png" data-target="#m18" data-toggle="modal">
+  <img width="200" src="019.png" data-target="#m19" data-toggle="modal">
+  <img width="200" src="020.png" data-target="#m20" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m17" data-toggle="modal">Pidgeotto</span>
+  <span class="names" data-target="#m18" data-toggle="modal">Pidgeot</span>
+  <span class="names" data-target="#m19" data-toggle="modal">Rattata</span>
+  <span class="names" data-target="#m20" data-toggle="modal">Raticate</span>
+  <br><br><br>
+  <img width="200" src="021.png" data-target="#m21" data-toggle="modal">
+  <img width="200" src="022.png" data-target="#m22" data-toggle="modal">
+  <img width="200" src="023.png" data-target="#m23" data-toggle="modal">
+  <img width="200" src="024.png" data-target="#m24" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m21" data-toggle="modal">Spearow</span>
+  <span class="names" data-target="#m22" data-toggle="modal">Fearow </span>
+  <span class="names" data-target="#m23" data-toggle="modal">Ekans </span>
+  <span class="names" data-target="#m24" data-toggle="modal">Arbok </span>
+  <br><br><br>
+  <img width="200" src="025.png" data-target="#m25" data-toggle="modal">
+  <img width="200" src="026.png" data-target="#m26" data-toggle="modal">
+  <img width="200" src="027.png" data-target="#m27" data-toggle="modal">
+  <img width="200" src="028.png" data-target="#m28" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m25" data-toggle="modal">Pikachu </span>
+  <span class="names" data-target="#m26" data-toggle="modal">Raichu</span>
+  <span class="names" data-target="#m27" data-toggle="modal">Sandshrew </span>
+  <span class="names" data-target="#m28" data-toggle="modal">Sandslash </span>
+  <br><br><br>
+
+  <img width="200" src="029.png" data-target="#m29" data-toggle="modal">
+  <img width="200" src="030.png" data-target="#m30" data-toggle="modal">
+  <img width="200" src="031.png" data-target="#m31" data-toggle="modal">
+  <img width="200" src="032.png" data-target="#m32" data-toggle="modal">
+  <br>
+  <span class="names" data-target="#m29" data-toggle="modal">Nidoran♀</span>
+  <span class="names" data-target="#m30" data-toggle="modal">Nidorina </span>
+  <span class="names" data-target="#m31" data-toggle="modal">Nidoqueen </span>
+  <span class="names" data-target="#m32" data-toggle="modal">Nidoran♂ </span>
+  <br><br><br>
+
+  <!--modal starts here-->
+  <div class="modal fade" id="m1">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="1.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m2">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="2.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m3">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="3.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m4">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="4.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m5">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="5.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m6">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="6.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m7">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="7.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m8">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="8.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m9">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="9.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m10">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="10.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m11">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="11.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m12">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="12.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m13">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="13.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m14">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="14.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m15">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="15.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m16">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="16.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m17">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="17.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m18">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="18.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m19">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="19.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m20">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="20.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m21">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="21.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m22">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="22.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m23">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="23.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m24">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="24.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m25">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="25.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m26">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="26.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m27">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="27.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m28">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="28.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m29">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="29.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m30">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="30.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m31">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="31.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+  <!--modal starts here-->
+  <div class="modal fade" id="m32">
+    <div class="modal-dialog" style="width:77%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+          <h2>About me</h2>
+        </div>
+        <div class="modal-body">
+          <img src="32.JPG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ends here-->
+</center>
+</body>
+<script src="main.js"></script>
+
+</html>
